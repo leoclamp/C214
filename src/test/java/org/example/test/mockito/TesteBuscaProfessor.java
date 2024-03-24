@@ -34,10 +34,10 @@ public class TesteBuscaProfessor {
             Professor cris = buscaProfessor.buscaProfessor(0);
             //Faz assertion
             assertEquals("Cris", cris.getNomeDoProfessor());
-            assertEquals("15:30", cris.getHorarioDeAtendimento());
+            assertEquals("segunda-feira - 15:30", cris.getHorarioDeAtendimento());
             assertEquals("Integral", cris.getPeriodo());
             assertEquals(2, cris.getSala());
-            assertEquals(1, cris.getPredio());
+            assertEquals(1, cris.getPredio()[0]);
 
         }
 
@@ -51,7 +51,7 @@ public class TesteBuscaProfessor {
             assertEquals("INEXISTENTE", inexistente.getHorarioDeAtendimento());
             assertEquals("INEXISTENTE", inexistente.getPeriodo());
             assertEquals(0, inexistente.getSala());
-            assertEquals(0, inexistente.getPredio());
+            assertEquals(0, inexistente.getPredio()[0]);
 
         }
 
