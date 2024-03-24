@@ -28,10 +28,10 @@ public class TesteBuscaProfessor {
 
         //Faz assertion
         assertEquals("Cris", cris.getNomeDoProfessor());
-        assertEquals("15:30", cris.getHorarioDeAtendimento());
+        assertEquals("segunda-feira - 15:30", cris.getHorarioDeAtendimento());
         assertEquals("Integral", cris.getPeriodo());
         assertEquals(2, cris.getSala());
-        assertEquals(1, cris.getPredio());
+        assertEquals(1, cris.getPredio()[0]);
 
     }
 
@@ -43,10 +43,10 @@ public class TesteBuscaProfessor {
 
         //Faz assertion
         assertEquals("Daniela", dani.getNomeDoProfessor());
-        assertEquals("17:30", dani.getHorarioDeAtendimento());
+        assertEquals("terça-feira - 17:30", dani.getHorarioDeAtendimento());
         assertEquals("Integral", dani.getPeriodo());
         assertEquals(8, dani.getSala());
-        assertEquals(2, dani.getPredio());
+        assertEquals(2, dani.getPredio()[0]);
 
     }
 
@@ -58,10 +58,10 @@ public class TesteBuscaProfessor {
 
         //Faz assertion
         assertEquals("Renan", renan.getNomeDoProfessor());
-        assertEquals("19:30", renan.getHorarioDeAtendimento());
+        assertEquals("quarta-feira - 19:30", renan.getHorarioDeAtendimento());
         assertEquals("Noturno", renan.getPeriodo());
         assertEquals(12, renan.getSala());
-        assertEquals(3, renan.getPredio());
+        assertEquals(3, renan.getPredio()[0]);
 
     }
 
@@ -73,10 +73,10 @@ public class TesteBuscaProfessor {
 
         //Faz assertion
         assertEquals("Luiz", luiz.getNomeDoProfessor());
-        assertEquals("13:30", luiz.getHorarioDeAtendimento());
+        assertEquals("quinta-feira - 13:30", luiz.getHorarioDeAtendimento());
         assertEquals("Integral", luiz.getPeriodo());
         assertEquals(16, luiz.getSala());
-        assertEquals(4, luiz.getPredio());
+        assertEquals(4, luiz.getPredio()[0]);
 
     }
     @Test
@@ -87,10 +87,10 @@ public class TesteBuscaProfessor {
 
         //Faz assertion
         assertEquals("Ynoguti", ynoguti.getNomeDoProfessor());
-        assertEquals("10:00", ynoguti.getHorarioDeAtendimento());
+        assertEquals("segunda-feira - 10:00", ynoguti.getHorarioDeAtendimento());
         assertEquals("Integral", ynoguti.getPeriodo());
         assertEquals(4, ynoguti.getSala());
-        assertEquals(1, ynoguti.getPredio());
+        assertEquals(1, ynoguti.getPredio()[0]);
 
     }
 
@@ -102,10 +102,10 @@ public class TesteBuscaProfessor {
 
         //Faz assertion
         assertEquals("Vitoria", vitoria.getNomeDoProfessor());
-        assertEquals("21:30", vitoria.getHorarioDeAtendimento());
+        assertEquals("terça-feira - 21:30", vitoria.getHorarioDeAtendimento());
         assertEquals("Integral", vitoria.getPeriodo());
         assertEquals(10, vitoria.getSala());
-        assertEquals(2, vitoria.getPredio());
+        assertEquals(2, vitoria.getPredio()[0]);
 
     }
 
@@ -117,10 +117,10 @@ public class TesteBuscaProfessor {
 
         //Faz assertion
         assertEquals("Soned", soned.getNomeDoProfessor());
-        assertEquals("19:30", soned.getHorarioDeAtendimento());
+        assertEquals("quarta-feira - 19:30", soned.getHorarioDeAtendimento());
         assertEquals("Noturno", soned.getPeriodo());
         assertEquals(14, soned.getSala());
-        assertEquals(3, soned.getPredio());
+        assertEquals(3, soned.getPredio()[0]);
 
     }
 
@@ -132,10 +132,10 @@ public class TesteBuscaProfessor {
 
         //Faz assertion
         assertEquals("Renzo", renzo.getNomeDoProfessor());
-        assertEquals("13:30", renzo.getHorarioDeAtendimento());
+        assertEquals("sexta-feira - 13:30", renzo.getHorarioDeAtendimento());
         assertEquals("Noturno", renzo.getPeriodo());
         assertEquals(22, renzo.getSala());
-        assertEquals(6, renzo.getPredio());
+        assertEquals(6, renzo.getPredio()[0]);
 
     }
 
