@@ -1,5 +1,6 @@
 package org.example;
 
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -24,7 +25,12 @@ public class BuscaProfessor {
             String horarioDeAtendimento = jsonObject.get("horarioDeAtendimento").getAsString();
             String periodo = jsonObject.get("periodo").getAsString();
             int sala = jsonObject.get("sala").getAsInt();
-            int predio = jsonObject.get("predio").getAsInt();
+            
+            JsonArray predioArray = jsonObject.get("predio").getAsJsonArray();
+            int[] predio = new int[predioArray.size()];
+            for (int i = 0; i < predioArray.size(); i++) {
+                predio[i] = predioArray.get(i).getAsInt();
+            }
 
             // Retorna um novo objeto Professor com os valores obtidos
             return new Professor(nomeDoProfessor, horarioDeAtendimento, periodo, sala, predio);
