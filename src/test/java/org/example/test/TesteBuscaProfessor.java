@@ -140,6 +140,21 @@ public class TesteBuscaProfessor {
     }
 
     @Test
+    public void testeBuscaProfessorInexistente(){
+
+        //Fiz a busca
+        Professor inexistente = buscaProfessor.buscaProfessor(10);
+
+        //Faz assertion
+        assertEquals("INEXISTENTE", inexistente.getNomeDoProfessor());
+        assertEquals("INEXISTENTE", inexistente.getHorarioDeAtendimento());
+        assertEquals("INEXISTENTE", inexistente.getPeriodo());
+        assertEquals(0, inexistente.getSala());
+        assertEquals(0, inexistente.getPredio()[0]);
+
+    }
+
+    @Test
     public void testeBuscaProfessorValido(){
 
         //Faz a busca de um professor válido (id = 0 ao 7 ou ID positivo)
