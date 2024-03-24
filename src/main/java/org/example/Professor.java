@@ -6,15 +6,16 @@ public class Professor {
         private String horarioDeAtendimento;
         private String periodo;
         private int sala;
-        private int predio;
+        private int predio[];
 
-    public Professor(String nomeDoProfessor, String horarioDeAtendimento, String periodo, int sala, int predio) {
+    public Professor(String nomeDoProfessor, String horarioDeAtendimento, String periodo, int sala, int[] predio) {
             this.nomeDoProfessor = nomeDoProfessor;
             this.horarioDeAtendimento = horarioDeAtendimento;
             this.periodo = periodo;
             this.sala = sala;
             this.predio = predio;
-        }
+    
+   }       
 
     public String getNomeDoProfessor() {
         return nomeDoProfessor;
@@ -32,7 +33,7 @@ public class Professor {
         return sala;
     }
 
-    public int getPredio() {
+    public int[] getPredio() {
         return predio;
     }
       
